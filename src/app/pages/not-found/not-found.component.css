@@ -1,0 +1,107 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.error-container {
+  text-align: center;
+  position: relative;
+}
+
+.error-number {
+  font-size: 180px;
+  color: #5f6caf;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  line-height: 1;
+}
+
+.error-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.home-button {
+  padding: 12px 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.error-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.animated-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.shape-1 {
+  top: -50px;
+  right: 10%;
+  width: 130px;
+  height: 130px;
+  border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+  background: #5f6caf;
+  animation: morph 8s ease-in-out infinite;
+}
+
+.shape-2 {
+  bottom: -80px;
+  left: 15%;
+  width: 120px;
+  height: 120px;
+  border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%;
+  background: #ff6b6b;
+  animation: morph 9s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+  }
+  50% {
+    border-radius: 35% 65% 35% 65% / 65% 35% 65% 35%;
+  }
+  100% {
+    border-radius: 65% 35% 65% 35% / 35% 65% 35% 65%;
+  }
+}

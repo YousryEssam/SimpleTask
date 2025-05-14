@@ -1,0 +1,162 @@
+<div class="container mt-4">
+    <!-- Page Header -->
+    <div class="page-header d-flex justify-content-between align-items-center">
+        <h2>Products</h2>
+        <button class="btn btn-primary add-btn">
+            <i class="fas fa-plus me-2"></i>Add Product
+        </button>
+    </div>
+
+    <!-- Search and Filter Row -->
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" class="form-control search-input" placeholder="Search products...">
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Products Table -->
+    <div class="table-container">
+        <table class="table table-hover mb-0">
+            <thead class="table-header">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th scope="col" class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Wireless Headphones</td>
+                    <td>
+                        <span class="badge bg-success quantity-badge">In Stock (45)</span>
+                    </td>
+                    <td>$129.99</td>
+                    <td class="text-center actions-column">
+                        <button class="btn btn-sm btn-outline-info action-btn me-1">
+                            <i class="fas fa-eye me-1"></i>Details
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary action-btn me-1">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger action-btn">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Bluetooth Speaker</td>
+                    <td>
+                        <span class="badge bg-success quantity-badge">In Stock (32)</span>
+                    </td>
+                    <td>$79.99</td>
+                    <td class="text-center actions-column">
+                        <button class="btn btn-sm btn-outline-info action-btn me-1">
+                            <i class="fas fa-eye me-1"></i>Details
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary action-btn me-1">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger action-btn">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Smart Watch</td>
+                    <td>
+                        <span class="badge bg-warning text-dark quantity-badge">Low Stock (5)</span>
+                    </td>
+                    <td>$199.99</td>
+                    <td class="text-center actions-column">
+                        <button class="btn btn-sm btn-outline-info action-btn me-1">
+                            <i class="fas fa-eye me-1"></i>Details
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary action-btn me-1">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger action-btn">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>P004</td>
+                    <td>Laptop Backpack</td>
+                    <td>
+                        <span class="badge bg-success quantity-badge">In Stock (78)</span>
+                    </td>
+                    <td>$49.99</td>
+                    <td class="text-center actions-column">
+                        <button class="btn btn-sm btn-outline-info action-btn me-1">
+                            <i class="fas fa-eye me-1"></i>Details
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary action-btn me-1">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger action-btn">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>P005</td>
+                    <td>Wireless Mouse</td>
+                    <td>
+                        <span class="badge bg-danger quantity-badge">Out of Stock (0)</span>
+                    </td>
+                    <td>$24.99</td>
+                    <td class="text-center actions-column">
+                        <button class="btn btn-sm btn-outline-info action-btn me-1">
+                            <i class="fas fa-eye me-1"></i>Details
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary action-btn me-1">
+                            <i class="fas fa-edit me-1"></i>Edit
+                        </button>
+                        <button class="btn btn-sm btn-outline-danger action-btn">
+                            <i class="fas fa-trash me-1"></i>Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pagination -->
+    <div class="d-flex justify-content-between align-items-center mt-4">
+        <div>
+            <select class="form-select form-select-sm" style="width: auto;">
+                <option value="10">10 per page</option>
+                <option value="25">25 per page</option>
+                <option value="50">50 per page</option>
+            </select>
+        </div>
+        <nav aria-label="Product pagination">
+            <ul class="pagination pagination-sm mb-0">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

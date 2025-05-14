@@ -1,0 +1,70 @@
+<div class="container mt-4">
+    <!-- Page Header -->
+    <div class="page-header d-flex justify-content-between align-items-center">
+        <h2>Add New Product</h2>
+        <a href="#" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left me-2"></i>Back to Products
+        </a>
+    </div>
+
+    <!-- Add Product Form -->
+    <div class="form-container">
+        <form>
+            <!-- Basic Information Section -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h5 class="border-bottom pb-2">Basic Information</h5>
+                </div>
+
+                <!-- Product ID -->
+                <div class="col-md-6 mb-3">
+                    <label for="productId" class="form-label required-field">Product ID</label>
+                    <div class="input-group input-with-icon">
+                        <span class="input-group-text"><i class="fas fa-hashtag"></i></span>
+                        <input type="text" class="form-control" id="productId" placeholder="Enter product ID" required>
+                    </div>
+                    <div class="form-text">Unique identifier for the product</div>
+                </div>
+
+                <!-- Product Name -->
+                <div class="col-md-6 mb-3">
+                    <label for="productName" class="form-label required-field">Product Name</label>
+                    <div class="input-group input-with-icon">
+                        <span class="input-group-text"><i class="fas fa-tag"></i></span>
+                        <input type="text" class="form-control" id="productName" placeholder="Enter product name"
+                            required>
+                    </div>
+                </div>
+
+                <!-- Price -->
+                <div class="col-md-6 mb-3">
+                    <label for="productPrice" class="form-label required-field">Price ($)</label>
+                    <div class="input-group input-with-icon">
+                        <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                        <input type="number" step="0.01" min="0" class="form-control" id="productPrice"
+                            placeholder="0.00" required>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="col-md-6 mb-3">
+                    <label for="productQuantity" class="form-label required-field">Quantity</label>
+                    <div class="input-group input-with-icon">
+                        <span class="input-group-text"><i class="fas fa-boxes"></i></span>
+                        <input type="number" min="0" class="form-control" id="productQuantity" placeholder="0" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-end gap-2">
+                    <button type="button" class="btn btn-outline-secondary action-btn">Cancel</button>
+                    <button type="submit" class="btn btn-primary action-btn">
+                        <i class="fas fa-save me-2"></i>Save Product
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

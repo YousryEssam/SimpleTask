@@ -1,0 +1,63 @@
+/* Custom Styles */
+.page-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.actions-column {
+  min-width: 200px;
+}
+
+.action-btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.table-container {
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-header {
+  background-color: #f8f9fa;
+}
+
+.table tr {
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.search-container {
+  position: relative;
+  max-width: 300px;
+}
+
+.search-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.search-input {
+  padding-left: 30px;
+  border-radius: 20px;
+}
+
+.add-btn {
+  border-radius: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.quantity-badge {
+  font-size: 0.875rem;
+  font-weight: normal;
+  padding: 0.35em 0.65em;
+}
