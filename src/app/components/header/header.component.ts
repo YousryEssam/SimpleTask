@@ -5,7 +5,10 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink],
+  imports: [RouterLink
+  , RouterModule
+  ]
+  ,
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

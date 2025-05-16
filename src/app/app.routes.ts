@@ -19,16 +19,18 @@ export const routes: Routes = [
         path: 'Products',
         component: ProductsComponent,
     },
+    { path: 'Products/new', component: ProductFormComponent },
+    {
+        path: 'Products/:id/edit',
+        component: ProductFormComponent,
+    },
     {
         path: 'Products/:id',
         component: ProductDetailsComponent,
     },
     {
-        path: 'Products/:id/Edit',
-        component: ProductFormComponent,
-    },
-        {
         path: '**',
         component: NotFoundComponent,
     },
+
 ];
